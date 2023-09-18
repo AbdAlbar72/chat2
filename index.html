@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lets Chat App</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="kwitter.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter.js"></script>
+<input type="text" id="user_name" class="form-control" place="User Name">
+</head>
+<body>
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+		<div class="form-group">
+
+		</div>
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Kwitter Room</h3>
+                    <button class="btn btn-danger float-right" onclick="handleLogout()">Logout</button>
+                </div>
+                <div class="card-body">
+                    <p>Welcome, <span id="username"></span>!</p>
+                    <div class="form-group">
+                        <label for="roomName">Room Name:</label>
+                        <input type="text" class="form-control" id="roomName" placeholder="Enter room name">
+                    </div>
+                    <button class="btn btn-primary" onclick="addRoom()">Add Room</button>
+                    <div id="roomList" class="mt-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	</div>
+</center>
+</body>
+</html>
